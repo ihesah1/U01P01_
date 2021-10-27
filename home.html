@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Pokemon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" href="home.css">
+    
+</head> <div class="topnav" id="myTopnav">
+   <div class="nav-bar">
+  <a href="home.html" class="active"> Home</a>
+  <a href="pokemonfev.html">Favourite</a> 
+  <a href="about.html"> About Pokemon </a> 
+   </div>
+
+</div>
+<body onload="renderCards('load')"> 
+
+    <div class="container">
+        <header class="header"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"/>
+        <h2 class="text-center"> Pokemon Cards </h2> </header>
+        <div class="text-center">
+            <input type="text"   id="inputValue" oninput="renderCards('load')">
+            <button class="btn btn-success" onclick="renderCards('btnclicked')">SEARCH</button>
+        </div>
+        <hr>
+        
+        <div class="row" id="showPokemons"> 
+        </div>
+    </div> 
+    <footer>
+        <p>Author: Hessah Alharbi</p>
+        <p><a href="ihesah.a1@gmail.com"> Contact me ^^ </a></p>
+    </footer>
+</body> 
+</html>
+<script src="pokemon.js"></script>
